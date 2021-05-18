@@ -4,8 +4,10 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
+
+
 nav{
     background-color: #0F292f;
     position: relative;
@@ -45,6 +47,8 @@ nav{
 
 .navbar-menu{
     display: inline-flex;
+    width: 100%;
+    border: 1px solid black;
 } 
 .navbar-item{
     position: relative;
@@ -54,6 +58,21 @@ nav{
     font-size: 20px;
     padding: 30px;
     color: #20a720;
+}
+.menubar-item{
+    color: #20a720;
+    font-size: 20px;
+    border: 1px solid #20a720;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20vw);
+    padding: 7px;
+    margin: 5px 5px;
+    width: 30px;
+    border-radius: 5px;
+}
+.menu-bar{
+    width: 30%;
 }
 .logo {
     display: flex;
@@ -74,7 +93,7 @@ nav{
     background-color: #c2b6be;
     position: relative;
 }
-.fa-shopping-cart:hover +.cart{
+.shopping-cart:hover +.cart{
     visibility: visible;
 }
 .cart:hover{
@@ -257,6 +276,22 @@ footer {
 .mobile{
     display: flex;
 }
+.menu-container{
+    display: none;
+}
+.menu-pane-product{
+    padding: 10px 2px 10px 2px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+    color:#46b450;
+    box-shadow: -1px -1px 5px black;
+    margin-left: 30%;
+}
+
 
 @media screen and (max-width: 1280px) {
     .grid-container{
@@ -267,11 +302,75 @@ footer {
     }
 }
 @media screen and (max-width: 1250px){
+    .menu-container{
+        display: block;
+    }
+    .hamburger-icon label{
+        position: absolute;
+        z-index: 99;
+    }
+    .hamburger-icon span {
+        height: 5px;
+        width: 40px;
+        background-color: #1f571b;
+        display: block;
+        margin: 5px 0px 5px 0px;
+        transition: 0.7s ease-in-out;
+        transform: none;
+    }
+      
+    #openmenu:checked ~ .menu-pane {
+        left: -5vw;
+        transform: translateX(-5vw);
+    }
+      
+    #openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+        transform: translate(0%, 175%) rotate(-45deg);
+        background-color: white;
+    }
+      
+    #openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+        transform: rotate(45deg);
+        background-color: white;
+    }
+      
+    #openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+        opacity: 0;
+    }
+      
+    #openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+        opacity: 0;
+    }
+      
+    div.menu-pane {
+        top: 0;
+        left: 0;
+        background-color: #6d3453;
+        position: absolute;
+        transform: translateX(-105vw);
+        transform-origin: (0, 0);
+        width: 50%;
+        height: 100%;
+        transition: 0.6s ease-in-out;
+    }
+    input.hamburger-checkbox {
+    position: absolute;
+    z-index: 3;
+    width: 10vw;
+    opacity: 0;
+    height: 6vh;
+    }
     .aside-nav{
         display: none;
     }
     .site-ad{
         display: none;
+    }
+    .navbar-item{
+        display: none;
+    }
+    .menubar-item{
+        display: inline-flex;
     }
 }
 @media screen and (max-width: 1090px){
@@ -299,7 +398,7 @@ footer {
     .cart:hover{
         visibility: hidden;
     }
-    .fa-shopping-cart:hover +.cart{
+    .shopping-cart:hover +.cart{
         visibility: hidden;
     }
     .grid-container{
@@ -310,7 +409,38 @@ footer {
     .grid-container{
         grid-template-columns: repeat(2, 220px);
         column-gap: 15px;
-        row-gap: 15px;  
+        row-gap: 15px;
+          
     }
-
+    .menu-pane{
+        font-size: 10px;
+    }
+    .menubar-item{
+        font-size: 10px;
+        margin-left: 2.5px;
+        padding: 5px;
+        transform: translateX(18vw);
+    }
+}
+@media screen and (max-width: 480px){
+    .grid-container{
+        margin: 10px 2px 10px 2px;
+        grid-template-columns: repeat(2, 180px);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+    .product-img{
+        width: 180px;
+        height: 180px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 150px);
+    }
+    .product-img{
+        width: 150px;
+        height: 140px;
+    }
+    
 }

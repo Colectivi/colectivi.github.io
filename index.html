@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="App.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-li-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Tech House</title>
+</head>
+<body>
+    <div class="site-ad">
+        <div class="animated">
+        <p class="text2">title2</p>
+        <p class="text3">title3</p>
+        </div>
+    </div>
+    <div class="nav-shadow-up"></div>
+    <nav class="nav-bar">
+        <div class="navbar-menu">
+                <a class="logo" href="index.html" class="TH">Tech House</a>                    
+                <a class="navbar-item " href="#"><i class="fas fa-user">პროფილი</i></a>
+                <a class="navbar-item" href="#"><i class="fas fa-shopping-cart"><span id="add_to_cart" type="number">10</span></i>
+                    <div class="cart">
+                    </div>
+                </a>
+
+        </div>
+    </nav>
+    <div class="nav-shadow-down"></div>
+    <div class="img-space">
+        <aside class="aside-nav">
+            <ul class="product">
+                <li class="product-li bars_li">
+                    <i class="fas fa-bars">&nbsp ნავიგაცია</i>
+                </li>
+                <li onmouseover="myOverFunction_mob()" onmouseout="mouseOutFunction_mob()" class="product-li">
+                    <i class="fas fa-mobile-alt">&nbsp მობილურები</i>
+                </li>
+                <li onmouseover="myOverFunction_lap()" onmouseout="mouseOutFunction_lap()" class="product-li">
+                    <i class="fas fa-laptop">&nbsp ლეპტოპები</i>
+                </li>
+                <li onmouseover="myOverFunction_acc()" onmouseout="mouseOutFunction_acc()" class="product-li">
+                    <i class="fas fa-headphones-alt">&nbsp აქსესუარები</i>
+                </li>
+                <li onmouseover="myOverFunction_photo()" onmouseout="mouseOutFunction_photo()" class="product-li">
+                    <i class="fas fa-camera-retro">&nbsp ფოტო-ვიდეო</i>
+                </li>
+                <li onmouseover="myOverFunction_console()" onmouseout="mouseOutFunction_console()" class="product-li">
+                    <i class="fas fa-gamepad">&nbsp კონსოლი</i>
+                </li>
+            </ul>
+        </aside>
+        <div id="sm">
+            <div id="erti" onmouseover="myOverFunction_mob()" onmouseout="mouseOutFunction_mob()">
+                <div class="mobile">
+                    <ul class="mob-ul"><span class="mob-ul-span">ბრენდები</span>
+                        <a href="#"><li>Apple</li></a>
+                        <a href="#"><li>Samsung</li></a>
+                        <a href="#"><li>Huawei</li></a>
+                        <a href="#"><li>Xiaomi</li></a>
+                        <a href="#"><li>Google</li></a>                        
+                        <a href="#"><li>OnePlus</li></a>
+                        <a href="#"><li>Realme</li></a>
+                        <a href="#"><li>Nokia</li></a>
+                        <a href="#"><li>Cat</li></a>
+                        <a href="#"><li>ყველას მონიშვნა</li></a>
+                    </ul>
+                    <div style="margin-left: 30px;">
+                        <ul class="mob-ul"><span class="mob-ul-span">კატეგორიები</span>
+                            <a href="#"><li>სმარტფონები</li></a>
+                            <a href="#"><li>ფაბლეტები</li></a>
+                            <a href="#"><li>სელფი სმარტფონები</li></a>
+                            <a href="#"><li>Rugged phones</li></a>
+                            <a href="#"><li>ყველას ნახვა</li></a>
+                        </ul>
+                        <ul class="mob-ul" style="margin-top: 10px;"><span class="mob-ul-span">მახასიეთებლები</span>
+                            <a href="#"><li>მძლავრი ელემენტით</li></a>
+                            <a href="#"><li>უჩარჩო ეკრანით</li></a>
+                            <a href="#"><li>სახის ამომცნობით</li></a>
+                            <a href="#"><li>Android One</li></a>
+                            <a href="#"><li>Qualcomm Snapdragon</li></a>
+                        </ul>
+                    </div>
+                    <ul class="mob-ul" style="margin-left: 30px;"><span class="mob-ul-span">ფლაგმანები</span>
+                        <a href="#"><li>Apple Iphone 12 Pro Max</li></a>
+                        <a href="#"><li>Apple Iphone 12 Pro</li></a>
+                        <a href="#"><li>Apple Iphone 12</li></a>
+                        <a href="#"><li>Samsung S21 Ultra</li></a>
+                        <a href="#"><li>Samsung S21+</li></a>                        
+                        <a href="#"><li>Samsung S21</li></a>
+                        <a href="#"><li>Asus ROG Phone 3</li></a>
+                        <a href="#"><li>Google Pixel 5</li></a>
+                        <a href="#"><li>OnePlus 8T</li></a>
+                        <a href="#"><li>Xiaomi Mi 10T 5G</li></a>
+                    </ul>    
+                </div>    
+            </div>
+            <div id="ori" onmouseover="myOverFunction_lap()" onmouseout="mouseOutFunction_lap()">ori</div>
+            <div id="sami" onmouseover="myOverFunction_acc()" onmouseout="mouseOutFunction_acc()">sami</div>
+            <div id="otxi" onmouseover="myOverFunction_photo()" onmouseout="mouseOutFunction_photo()">otxi</div>
+            <div id="xuti" onmouseover="myOverFunction_console()" onmouseout="mouseOutFunction_console()">xuti</div>
+        </div>
+    </div>
+    <div class="hot-quotes">
+        <i class="fab fa-hotjar hot"><span style="color:antiquewhite;">&nbsp;ცხელი შეთაზებები</span></i>
+    </div>
+    <div class="fav-product">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a>
+                    <img class="product-img" src="https://images.samsung.com/africa_en/smartphones/galaxy-s21/buy/galaxy-s21-phantom-violet.png">
+                    <p>2800</p>
+                    <p><span>Samsung Galaxy S21 Ultra Dual Sim 12GB RAM 256GB 5G Black</span></p>
+                    <i class="fas fa-cart-plus" onclick="onClickFunction()"></i>
+                </a>
+             </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img class="product-img" src="https://img.zoommer.ge/zoommer-images/thumbs/0124406_asus-tuf-15-fx505gt-al037_550.jpeg">
+                    <p>3800</p>
+                    <p><span>TUF 15 FX505DT-HN540</span></p>
+                </a>
+
+            </div>
+            <div class="grid-item">
+                <a>
+                    <img class="product-img" src="https://images.samsung.com/africa_en/smartphones/galaxy-s21/buy/galaxy-s21-phantom-violet.png">
+                    <p>1400ლარი</p>
+                    <p>Samsung Galaxy S21 Ultra Dual Sim 12GB RAM 256GB 5G Black</p>
+                </a>
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
 
 
@@ -180,7 +181,6 @@ footer {
     background-color: #14A098;
     display: grid;
     grid-template-columns: repeat(5, 220px);
-    grid-template-rows: 300px;  
     column-gap: 40px;
     row-gap: 40px;
     justify-content: center;
@@ -188,6 +188,8 @@ footer {
 }
 .grid-item{
     background-color: #CCCCCC;
+    position: relative;
+    min-height: 300px;
 
 }
 .grid-item:hover{
@@ -290,6 +292,14 @@ footer {
     color:#46b450;
     box-shadow: -1px -1px 5px black;
     margin-left: 30%;
+}
+.add-new{
+    position: relative;
+    color: #46b450;
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    top: 80px;
 }
 
 

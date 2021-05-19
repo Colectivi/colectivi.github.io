@@ -56,4 +56,27 @@ function onClickFunction(){
 
 }
 
+function addNewFunction (){
+    var grid_container = document.getElementById("grid-container");
+    var grid_item = document.createElement("div");
+    var pp = document.createElement("p");
+    var pn = document.createElement("p");
+    grid_item.classList.add("grid-item"); 
+    var price = prompt("გთხოვთ შეიყვანოთ ნივთის ფასი: ");
+    var name = prompt("გთხოვთ შეიყვანოთ ნივთის დასახელება: ");
+    var image = prompt("გთხოვთ შეიყვანეთ სურათის ლინკი ან მდებარეობა: ");
+    var img = document.createElement('img');
+    img.src = image;
+    img.classList.add("product-img");
+    price = document.createTextNode(price);
+    name = document.createTextNode(name);
+    grid_container.appendChild(grid_item);
+    pp.appendChild(price);
+    pn.appendChild(name);
+    grid_item.appendChild(img);
+    grid_item.appendChild(pp);
+    grid_item.appendChild(pn);
+    grid_container.insertBefore(grid_item ,grid_container.childNodes[0]);
+}
+
 
